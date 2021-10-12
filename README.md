@@ -6,14 +6,14 @@ Annotations are also useful for representing the __metadata__ for a class, metho
 # Built-in Annotations in Java
 There are several Built-in Annotations in Java, they are categorised into two:
 
-## Built-in Annotations that are applied to Java Code
+## Built-in Annotations applied to Java Code
 - [@Override](#override) 
 - [@Deprecated](#deprecated)
 - [@SuppressWarnings](#supresswarnings)
 - [@FunctionalInterface](#functionalinterface)
 <br></br>
 
-## Built-in Annotations that are applied to Other Annotations
+## Built-in Annotations applied to Other Annotations
 - [@Retention](#retention)
 - [@Documented](#documented)
 - [@Target](#target)
@@ -103,8 +103,8 @@ __Output:__
 
 __At Compile time:__
 ```
-Note: Parent.java uses or overrides a deprecated API.
-Note: Recompile with -Xlint:deprecation for details.
+Parent.java uses or overrides a deprecated API.
+Recompile with -Xlint:deprecation for details.
 ```
 
 __At Run time:__
@@ -212,7 +212,7 @@ Here in the example you've seen ```RetentionPolicy.CLASS``` there are other opti
 
 ```RetentionPolicy.CLASS```: means the annotation would be stored at .class file but would not be accessible during runtime.
 
-```RetentionPolicy.SOURCE```: the annotation would only stored in the source code, not in the .class file or during runtime.
+```RetentionPolicy.SOURCE```: The annotation would be in the program's source code, not in a ```.class``` file or during runtime.
 
 # @Documented
 The ```@Documented``` annotation specifies that JavaDoc should document components that used it.
@@ -233,7 +233,7 @@ class Test{
 Here, while generating JavaDoc for class Test, MyAnno would be included in it.
 
 # @Target
-```@Target``` annotation indicates where the annotation can be used.
+```@Target``` annotation indicates where you can use the annotations.
 
 __Example:__
 ```java
